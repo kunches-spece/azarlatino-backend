@@ -1,7 +1,7 @@
-module.exports = (req, res) => {
+export default function handler(req, res) {
   res.status(200).json({
-    ok: true,
+    status: "ok",
     service: "azarlatino-backend",
-    timestamp: new Date().toISOString()
+    time: new Date().toISOString()
   });
-};
+}
